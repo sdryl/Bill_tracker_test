@@ -253,7 +253,7 @@ class BillManager {
   }
 
   public getBillTypeLabel(bill: Bill): string {
-    switch (bill.name) {
+    switch (bill.constructor.name) {
       case "EntertainmentSubscription":
         return "Entertainment";
       case "ProductivitySubscription":
